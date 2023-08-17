@@ -35,3 +35,4 @@ ENTRYPOINT [ "java", \
    "-Dwebgoat.port=8080", \
    "-Dwebwolf.port=9090", \
    "-jar", "webgoat.jar" ]
+   CMD ["java", "-jar", "webgoat-2023.5-SNAPSHOT.jar"]
