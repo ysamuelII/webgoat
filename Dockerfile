@@ -11,7 +11,7 @@ USER webgoat
 
 COPY --chown=webgoat target/webgoat-*.jar /home/webgoat/webgoat.jar
 
-EXPOSE 8080
+EXPOSE 8081
 EXPOSE 9090
 
 WORKDIR /home/webgoat
@@ -32,7 +32,7 @@ ENTRYPOINT [ "java", \
    "-Drunning.in.docker=true", \
    "-Dwebgoat.host=0.0.0.0", \
    "-Dwebwolf.host=0.0.0.0", \
-   "-Dwebgoat.port=8080", \
+   "-Dwebgoat.port=8081", \
    "-Dwebwolf.port=9090", \
    "-jar", "webgoat.jar" ]
    CMD ["java", "-jar", "webgoat-2023.5-SNAPSHOT.jar"]
